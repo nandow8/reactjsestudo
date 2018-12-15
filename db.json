@@ -1,28 +1,15 @@
 {
-    "user": [
+    "produtos": [
       {
         "id": 1,
-        "person_name": "Franciele Alexandre Rodrigues Alves",
-        "business_name": "Fran",
-        "business_gst_number": 123456
+        "nome": "Notebook dell",
+        "preco": 1500.00
       },
       {
         "id": 2,
-        "person_name": "Fernando Santos Alves",
-        "business_name": "Nandão",
-        "business_gst_number": 5525
-      },
-      {
-        "person_name": "f",
-        "business_name": "asd",
-        "business_gst_number": "23",
-        "id": 3
-      },
-      {
-        "person_name": "Alexandre Marques da Silva",
-        "business_name": "Nenem",
-        "business_gst_number": "1231232444",
-        "id": 4
+        "nome": "HD SSD",
+        "preco": 150.00
       }
+      
     ]
   }
