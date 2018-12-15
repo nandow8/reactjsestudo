@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './template/Header';
-import SideBar from './template/SideBar';
+import Header from './template/Header'; 
 import Content from './template/Content';
 
 class App extends Component {
@@ -10,7 +8,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <SideBar />
         <Content />
       </div>
     );

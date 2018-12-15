@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {  NavLink } from "react-router-dom";
 export default class SideBar extends Component {
     render(){
         return (
@@ -7,11 +7,11 @@ export default class SideBar extends Component {
                 <section className="sidebar">
                     <div className="user-panel">
                         <div className="pull-left image">
-                            <img src="img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+                            <img src="img/mito.jpg" className="img-circle" alt="User" />
                         </div>
                         <div className="pull-left info">
                             <p>Alexander Pierce</p>
-                            <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
+                            <a href="/"><i className="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
                     <hr></hr> 
@@ -25,21 +25,19 @@ export default class SideBar extends Component {
                         </div>
                     </form> */}
                     <ul className="sidebar-menu" data-widget="tree">
-                        <li className="treeview">
-                            <a href="#">
+                    <li className="treeview">
+                            <a href="/">
                                 <i className="fa fa-files-o"></i>
-                                <span>Produtos</span>
+                                <span>Layout Options</span>
                                 <span className="pull-right-container">
                                 <span className="label label-primary pull-right">4</span>
                                 </span>
                             </a>
                             <ul className="treeview-menu">
-                                <li><a href="pages/layout/top-nav.html"><i className="fa fa-circle-o"></i>Lista</a></li>
-                                <li><a href="pages/layout/boxed.html"><i className="fa fa-circle-o"></i> Cadastrar produto</a></li>
-                                {/* <li><a href="pages/layout/fixed.html"><i className="fa fa-circle-o"></i> Fixed</a></li>
-                                <li><a href="pages/layout/collapsed-sidebar.html"><i className="fa fa-circle-o"></i> Collapsed Sidebar</a></li> */}
-                            </ul>
-                        </li>
+                                <li><NavLink to="/produtos"><i className="fa fa-home"></i>Produtos</NavLink></li>
+                                <li><NavLink to="/produtosform">ProdutosForm</NavLink></li>
+                            </ul> 
+                            </li>                   
                         {/* <li>
                         <a href="pages/widgets.html">
                             <i className="fa fa-th"></i> <span>Widgets</span>
@@ -49,7 +47,7 @@ export default class SideBar extends Component {
                         </a>
                         </li>
                         <li className="treeview">
-                        <a href="#">
+                        <a href="/">
                             <i className="fa fa-pie-chart"></i>
                             <span>Charts</span>
                             <span className="pull-right-container">
