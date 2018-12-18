@@ -4,8 +4,9 @@ import {  NavLink } from "react-router-dom";
 
 import { Route, HashRouter } from "react-router-dom";
 import Produtos from '../pages/produtos/Produtos'
-import ProdutosForm from '../pages/produtos/ProdutosForm.jsx'
+import ProdutosCreate from '../pages/produtos/ProdutosCreate.jsx'
 import SideBar from '../template/SideBar.jsx'
+import ProdutosEdit from '../pages/produtos/ProdutosEdit';
 
 export default class Content extends Component {
     render(){
@@ -21,7 +22,8 @@ export default class Content extends Component {
 
                     <div className="content">
                         <Route path="/produtos" component={ Produtos }/>
-                        <Route path="/produtosform" component={ ProdutosForm }/>
+                        <Route path="/produtoscreate" component={ ProdutosCreate }/>
+                        <Route path="/produtosedit/:id" component={ ProdutosEdit }/>
                     </div>
                 </div>
             </HashRouter>

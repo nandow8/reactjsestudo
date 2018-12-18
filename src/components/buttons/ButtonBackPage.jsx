@@ -16,7 +16,7 @@ export default class ButtonBackPage extends Component {
   }
 
   static contextTypes = {
-    router: () => null, // replace with PropTypes.object if you use them
+    router: () => null, 
   }
   
   render() {
@@ -25,7 +25,7 @@ export default class ButtonBackPage extends Component {
       <div>
         <button
           className={ buttonClasses }
-          onClick={this.context.router.history.goBack}>
+          onClick={this.context.router.history.goBack} >
             { this.props.titulo }
         </button>
       </div>

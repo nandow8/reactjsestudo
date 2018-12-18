@@ -14,7 +14,7 @@ export default class SideBar extends Component {
                             <a href="/"><i className="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
-                    <hr></hr> 
+                    <hr></hr>
                     {/* <form action="#" method="get" className="sidebar-form">
                         <div className="input-group">
                             <input type="text" name="q" className="form-control" placeholder="Search..." />
@@ -25,70 +25,21 @@ export default class SideBar extends Component {
                         </div>
                     </form> */}
                     <ul className="sidebar-menu" data-widget="tree">
-                    <li className="treeview">
+                        <li className="active treeview">
                             <a href="/">
-                                <i className="fa fa-files-o"></i>
-                                <span>Layout Options</span>
+                                <i className="fa fa-dashboard"></i> <span>Produtos</span>
                                 <span className="pull-right-container">
-                                <span className="label label-primary pull-right">4</span>
+                                <i className="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                             <ul className="treeview-menu">
                                 <li><NavLink to="/produtos"><i className="fa fa-home"></i>Produtos</NavLink></li>
-                                <li><NavLink to="/produtosform">ProdutosForm</NavLink></li>
-                            </ul> 
-                            </li>                   
-                        {/* <li>
-                        <a href="pages/widgets.html">
-                            <i className="fa fa-th"></i> <span>Widgets</span>
-                            <span className="pull-right-container">
-                            <small className="label pull-right bg-green">new</small>
-                            </span>
-                        </a>
-                        </li>
-                        <li className="treeview">
-                        <a href="/">
-                            <i className="fa fa-pie-chart"></i>
-                            <span>Charts</span>
-                            <span className="pull-right-container">
-                            <i className="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul className="treeview-menu">
-                            <li><a href="pages/charts/chartjs.html"><i className="fa fa-circle-o"></i> ChartJS</a></li>
-                            <li><a href="pages/charts/morris.html"><i className="fa fa-circle-o"></i> Morris</a></li>
-                            <li><a href="pages/charts/flot.html"><i className="fa fa-circle-o"></i> Flot</a></li>
-                            <li><a href="pages/charts/inline.html"><i className="fa fa-circle-o"></i> Inline charts</a></li>
-                        </ul>
-                        </li>
-                        <li>
-                        <ul className="treeview-menu">
-                            <li><a href="pages/tables/simple.html"><i className="fa fa-circle-o"></i> Simple tables</a></li>
-                            <li><a href="pages/tables/data.html"><i className="fa fa-circle-o"></i> Data tables</a></li>
-                        </ul>
-                        </li>
-                        <li>
-                        <a href="pages/calendar.html">
-                            <i className="fa fa-calendar"></i> <span>Calendar</span>
-                            <span className="pull-right-container">
-                            <small className="label pull-right bg-red">3</small>
-                            <small className="label pull-right bg-blue">17</small>
-                            </span>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="pages/mailbox/mailbox.html">
-                            <i className="fa fa-envelope"></i> <span>Mailbox</span>
-                            <span className="pull-right-container">
-                            <small className="label pull-right bg-yellow">12</small>
-                            <small className="label pull-right bg-green">16</small>
-                            <small className="label pull-right bg-red">5</small>
-                            </span>
-                        </a>
-                        </li> */}
+                                <li><NavLink to="/produtoscreate"><i className="fa fa-pencil"></i>Cadastro de produtos</NavLink></li>
+                            </ul>
+                        </li> 
                     </ul>
                 </section>
-            </aside> 
+            </aside>
         )
     }
 }
